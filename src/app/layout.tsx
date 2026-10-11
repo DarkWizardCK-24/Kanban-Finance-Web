@@ -6,7 +6,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Kanban Finance System",
   description: "Manage your wealth, one card at a time",
-  icons: { icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%A6%3C/text%3E%3C/svg%3E" },
+  icons: {
+    icon: [{ url: "/icon-512.png", sizes: "512x512", type: "image/png" }],
+    apple: [{ url: "/icon-512.png", sizes: "512x512", type: "image/png" }],
+  },
 };
 
 export const viewport: Viewport = {

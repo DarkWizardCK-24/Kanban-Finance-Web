@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/icon-512.png" alt="Kanban Finance System icon" width="128" height="128" />
+</p>
+
 # Kanban Finance System (Next.js)
 
 A clean web app for smart wealth management. Visualize and track your savings, investments & financial goals using intuitive Kanban boards. Built with Next.js & Firebase (Auth + Firestore). Manage money better. Grow wealth faster.
