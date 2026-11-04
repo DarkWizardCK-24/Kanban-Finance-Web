@@ -117,7 +117,7 @@ export default function KanbanPage() {
             }} className="btn-danger">Delete</button>
           </>
         }>
-        Delete &quot;{confirmDelete?.title}&quot; — {confirmDelete && Formatters.currency(confirmDelete.amount)}?
+        Delete &quot;{confirmDelete?.title}&quot;: {confirmDelete && Formatters.currency(confirmDelete.amount)}?
       </Modal>
     </div>
   );

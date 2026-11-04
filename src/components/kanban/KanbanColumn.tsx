@@ -79,7 +79,7 @@ export function KanbanColumn({
   );
 }
 
-// Filter helpers re-used between two kanban screens
+// Shared by both kanban screens
 export function txnsByStatus(txns: TransactionModel[]) {
   return {
     pending:    txns.filter((t) => t.status === "pending"),

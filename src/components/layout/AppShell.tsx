@@ -48,7 +48,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen flex-col bg-dark-bg lg:flex-row">
-      {/* Sidebar (desktop) */}
       <aside className="hidden w-64 shrink-0 flex-col border-r border-dark-border bg-dark-surface lg:flex">
         <div className="flex items-center gap-3 border-b border-dark-border px-5 py-5">
           <Avatar initials={userInitials(user.name)} size={40} onClick={() => router.push("/profile")} />
@@ -80,9 +79,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       </aside>
 
-      {/* Main column */}
       <div className="flex min-h-screen flex-1 flex-col">
-        {/* Mobile / tablet top bar */}
         <header className="sticky top-0 z-30 border-b border-dark-border bg-dark-surface/95 px-4 py-3 backdrop-blur lg:hidden">
           <div className="flex items-center gap-3">
             <Avatar initials={userInitials(user.name)} size={36} onClick={() => router.push("/profile")} />
@@ -97,10 +94,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </div>
         </header>
 
-        {/* Page content */}
         <main className="flex-1 pb-24 lg:pb-8">{children}</main>
 
-        {/* Bottom nav (mobile/tablet) */}
         <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-dark-border bg-dark-surface/95 backdrop-blur lg:hidden">
           <ul className="grid grid-cols-4">
             {NAV.map((item) => {

@@ -38,12 +38,10 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto max-w-7xl space-y-6 px-4 py-5 sm:px-6 sm:py-6 lg:px-8">
-      {/* Wealth */}
       {summary
         ? <WealthSummaryCard summary={summary} />
         : <div className="h-44 animate-pulse rounded-2xl border border-dark-border bg-wealth-gradient" />}
 
-      {/* Category breakdown */}
       {breakdown.length > 0 && (
         <section>
           <h2 className="mb-3 flex items-center gap-2 text-base font-bold text-text-primary">
@@ -65,7 +63,6 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Bank Accounts */}
       <section>
         <div className="mb-3 flex items-center justify-between">
           <h2 className="flex items-center gap-2 text-base font-bold text-text-primary">

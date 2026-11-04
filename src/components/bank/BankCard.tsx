@@ -38,13 +38,11 @@ export function BankCard({ account, onClick, onEdit, onDelete, index = 0 }: Prop
       tabIndex={0}
       onKeyDown={(e) => { if (e.key === "Enter") onClick?.(); }}
     >
-      {/* Decorative circles */}
       <span className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-white/[0.06]" />
       <span className="pointer-events-none absolute -bottom-7 right-7 h-24 w-24 rounded-full bg-white/[0.06]" />
       <span className="pointer-events-none absolute -left-5 bottom-3 h-16 w-16 rounded-full bg-white/[0.04]" />
 
       <div className="relative flex h-full flex-col justify-between p-5">
-        {/* Header */}
         <div>
           <div className="flex items-center gap-2.5">
             <span className="rounded-md bg-white/20 p-1.5 text-white"><FaBuildingColumns size={13} /></span>
@@ -124,7 +122,6 @@ export function BankCard({ account, onClick, onEdit, onDelete, index = 0 }: Prop
           </div>
         </div>
 
-        {/* Footer */}
         <div>
           <div className="flex items-end gap-3">
             <div className="flex-1 min-w-0">

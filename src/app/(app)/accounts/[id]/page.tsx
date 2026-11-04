@@ -102,7 +102,6 @@ export default function BankDetailPage() {
         </button>
       </div>
 
-      {/* Bank header */}
       <div className="rounded-2xl p-5 text-white shadow-card animate-fade-in"
         style={{
           background: `linear-gradient(135deg, ${colors[0]} 0%, ${colors[1]} 100%)`,
@@ -128,7 +127,6 @@ export default function BankDetailPage() {
         </div>
       </div>
 
-      {/* Credentials */}
       <div className="surface-card overflow-hidden">
         <div className="flex items-center gap-3 px-4 py-3.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-cyan/10 text-accent-cyan">
@@ -182,7 +180,6 @@ export default function BankDetailPage() {
         </div>
       </div>
 
-      {/* Kanban */}
       <div>
         <div className="mb-2 flex items-center gap-2">
           <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent-cyan/10 text-accent-cyan">
@@ -244,7 +241,7 @@ export default function BankDetailPage() {
             }} className="btn-danger">Delete</button>
           </>
         }>
-        Delete &quot;{confirmDelete?.title}&quot; — {confirmDelete && Formatters.currency(confirmDelete.amount)}?
+        Delete &quot;{confirmDelete?.title}&quot;: {confirmDelete && Formatters.currency(confirmDelete.amount)}?
       </Modal>
     </div>
   );

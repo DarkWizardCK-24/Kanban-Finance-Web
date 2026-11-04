@@ -138,7 +138,7 @@ export function BankForm({ existing }: Props) {
         />
         <TextField
           label="Account Number"
-          hint="Enter account number (6–18 digits)"
+          hint="Enter account number (6-18 digits)"
           inputMode="numeric"
           maxLength={18}
           prefix={<FaHashtag size={14} />}
@@ -176,7 +176,7 @@ export function BankForm({ existing }: Props) {
                   {hasCard ? "Has Debit/Credit Card" : "Account / Passbook Only"}
                 </p>
                 <p className="text-[11px] text-text-secondary">
-                  {hasCard ? "Card number, CVV & expiry required" : "No card — e.g. Post Office, Postal Savings"}
+                  {hasCard ? "Card number, CVV & expiry required" : "No card, e.g. Post Office, Postal Savings"}
                 </p>
               </div>
               <span className={`relative h-6 w-11 rounded-full transition-colors ${

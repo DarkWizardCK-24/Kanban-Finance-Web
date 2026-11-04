@@ -126,7 +126,7 @@ html, body {
   100% { background-position: 1000px 0; }
 }
 
-/* Native date input – dark theme */
+/* Native date input, dark theme */
 input[type="date"] {
   color-scheme: dark;
 }

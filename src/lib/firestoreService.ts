@@ -12,7 +12,6 @@ import {
 } from "./models";
 import { calculateAccountTotal, calculateWealth, type WealthSummary } from "./wealth";
 
-// ── BANK ACCOUNTS ────────────────────────────────────────────────────────────
 export function watchBankAccounts(
   userId: string,
   callback: (accounts: BankAccountModel[]) => void,
@@ -76,7 +75,6 @@ export async function deleteBankAccount(bankId: string): Promise<void> {
   await batch.commit();
 }
 
-// ── TRANSACTIONS ─────────────────────────────────────────────────────────────
 export function watchTransactionsForBank(
   bankAccountId: string,
   callback: (txns: TransactionModel[]) => void,
@@ -162,7 +160,6 @@ async function updateBankAccountTotal(bankAccountId: string): Promise<void> {
   });
 }
 
-// ── WEALTH ───────────────────────────────────────────────────────────────────
 export async function getWealthSummary(userId: string): Promise<WealthSummary> {
   const accountsSnap = await getDocs(
     query(collection(firestore, "bank_accounts"), where("userId", "==", userId)),

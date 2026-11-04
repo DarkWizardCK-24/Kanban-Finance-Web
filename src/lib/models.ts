@@ -1,6 +1,5 @@
 import { Timestamp } from "firebase/firestore";
 
-// ── User ─────────────────────────────────────────────────────────────────────
 export interface UserModel {
   id: string;
   uid: string;
@@ -58,7 +57,6 @@ export function userToMap(u: UserModel): Record<string, any> {
   };
 }
 
-// ── Account Category ─────────────────────────────────────────────────────────
 export type AccountCategory =
   | "savings" | "expenses" | "fixed" | "current"
   | "salary"  | "recurring"| "nri"   | "business" | "postalSavings";
@@ -80,7 +78,6 @@ export const ALL_CATEGORIES: AccountCategory[] = [
   "recurring", "nri", "business", "postalSavings",
 ];
 
-// ── Bank Account ─────────────────────────────────────────────────────────────
 export interface BankAccountModel {
   id: string;
   userId: string;
@@ -147,7 +144,6 @@ export function bankAccountToMap(a: BankAccountModel): Record<string, any> {
   };
 }
 
-// ── Transaction ──────────────────────────────────────────────────────────────
 export type TransactionStatus = "pending" | "completed" | "failed" | "processing" | "cancelled";
 export type TransactionType = "credit" | "debit";
 

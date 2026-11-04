@@ -1,4 +1,3 @@
-// ── Dark Vault Palette ──────────────────────────────────────────────────────
 export const AppColors = {
   darkBg: "#090E1A",
   darkSurface: "#111827",
@@ -35,7 +34,6 @@ export const AppColors = {
   info: "#4FC3F7",
 };
 
-// ── Bank Brand Gradients ────────────────────────────────────────────────────
 type Gradient = readonly [string, string];
 
 export const BankGradients = {
