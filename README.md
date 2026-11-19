@@ -4,6 +4,8 @@
 
 # Kanban Finance System (Next.js)
 
+<p align="center"><img src="docs/thumbnails/kanban-finance-web-thumb-1-hero.png" alt="Kanban Finance web app: wealth dashboard, bank accounts and kanban boards on desktop and mobile" width="900"></p>
+
 A web app for tracking savings, investments and financial goals on Kanban boards. Built with Next.js and Firebase (Auth + Firestore).
 
 Built with **Next.js 14 (App Router)**, **TailwindCSS**, **react-icons**, and **Firebase (Auth + Firestore)**. Connects to the **same Firebase project** (`kanban-finance-system`) as the Flutter companion app, so accounts, bank cards and transactions stay in sync.
